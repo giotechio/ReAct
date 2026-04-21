@@ -16,7 +16,7 @@ llm = ChatOllama(model="qwen3:1.7b")
 # Create the ReAct agent
 graph = create_agent(model=llm, tools=tools)
 # User input
-inputs = {"messages": [("user", "Add 3 and 4. Multiply the result by 2.")]}
+inputs = {"messages": [("user", "Add 3 and 4. Multiply the result by 3.")]}
 # Run the ReAct agent
 messages = graph.invoke(inputs)
 for message in messages["messages"]:
