@@ -21,5 +21,6 @@ inputs = {"messages": [("user", "Add 3 and 4. Multiply the result by 3.")]}
 messages = graph.invoke(inputs)
 for message in messages["messages"]:
     print(message.content)
+
 from display_graph import display_graph
 display_graph(graph)
